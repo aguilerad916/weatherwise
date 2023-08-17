@@ -34,9 +34,9 @@ export default function SearchBox() {
   }, [inputValue]);
 
   return (
-    <>
+    <div>
       <input
-        className="bg-blue-500 p-2 rounded-lg w-64 text-white"
+        className="bg-gray-500 p-2 rounded-lg w-64"
         type="text"
         placeholder="City name"
         value={inputValue}
@@ -54,6 +54,6 @@ export default function SearchBox() {
           ))}
         </ul>
       )}
-    </>
+    </div>
   );
 }
