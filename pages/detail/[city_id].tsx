@@ -48,7 +48,7 @@ export default function displayData({ city, weather }: Props) {
         <title>WeatherWise</title>
       </Head>
       <main className="mt-5 mx-5">
-        <h1 className="text-xl font-medium mb-4">WeatherWise</h1>
+        <h1 className="flex justify-center text-xl font-medium mb-4">WeatherWise</h1>
         <Link href="/">&larr; Home</Link>
         <div className="py-5">
           <div className="bg-blue-500 rounded p-4">

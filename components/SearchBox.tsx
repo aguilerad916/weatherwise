@@ -36,7 +36,7 @@ export default function SearchBox() {
   return (
     <div>
       <input
-        className="bg-gray-500 p-2 rounded-lg w-64"
+        className="p-2 rounded-lg w-64"
         type="text"
         placeholder="City name"
         value={inputValue}

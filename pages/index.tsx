@@ -3,7 +3,7 @@ import Head from "next/head";
 
 export default function Home() {
   return (
-    <div className="bg-gradient-to-r from-neutral-300 to-stone-400 py-4">
+    <div className="py-4">
       <Head>
         <title>WeatherWise</title>
       </Head>
