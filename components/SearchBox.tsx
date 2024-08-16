@@ -43,9 +43,9 @@ export default function SearchBox() {
         onChange={(e) => setInputValue(e.target.value)}
       />
       {inputValue.length >= MIN_CITY_CHARS && (
-        <ul>
+        <ul className="py-1">
           {cities.map((city) => (
-            <li key={city.id}>
+            <li key={city.id} className="block w-full rounded-md px-4 py-2 text-left text-sm font-medium text-foreground transition-colors hover:bg-primary hover:text-primary-foreground focus:outline-none focus-visible:bg-primary focus-visible:text-primary-foreground">
               <Link href={`/detail/${city.id}`}>
                 {city.name}
                 {city.state ? `, ${city.state}` : ""} ({city.country})
