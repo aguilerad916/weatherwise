@@ -3,9 +3,9 @@ import { NextApiRequest, NextApiResponse } from "next";
 import cities from "@/lib/city.list.json";
 
 const Cities = cities as CityData[];
-const NUM_SUGGETIONS = 5;
+const NUM_SUGGESTIONS = 7;
 function searchCities(name: string):CityData[] {
-    const matchingCities = Cities.filter(city => city.name.toLowerCase().startsWith(name.toLowerCase())).slice(0, NUM_SUGGETIONS);
+    const matchingCities = Cities.filter(city => city.name.toLowerCase().startsWith(name.toLowerCase())).slice(0, NUM_SUGGESTIONS);
     return matchingCities;
 }
 
