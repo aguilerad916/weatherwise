@@ -47,21 +47,25 @@ export default function displayData({ city, weather }: Props) {
       <Head>
         <title>WeatherWise</title>
       </Head>
-      <main className="mt-5 mx-5">
-        <h1 className="flex justify-center text-xl font-medium mb-4">WeatherWise</h1>
+
+
+      <header className="flex items-center p-4 bg-slate-800 text-white">
         <Link href="/">&larr; Home</Link>
+        <h1 className="flex-grow text-center text-xl font-medium">WeatherWise</h1>  
+      </header>
+      <main className="mt-5 mx-5">
         <div className="py-5">
           <div className="bg-blue-500 rounded p-4">
             <div className="grid grid-cols-2">
               <div>
-                <h2 className="text-2xl mb-4 text-white">
+                <h2 className="text-2xl mb-4 font-semibold text-white">
                   {city.name} ({city.country})
                 </h2>
-                <span className="font-medium text-lg text-white">
+                <span className="font-bold text-3xl text-white">
                   {((weather.main.temp_max * 9) / 5 + 32).toFixed(0)}&deg;F
                 </span>
                 &nbsp;
-                <span className="text-gray-300 text-sm">
+                <span className="text-gray-300 font-normal text-sm">
                   {((weather.main.temp_min * 9) / 5 + 32).toFixed(0)}&deg;F
                 </span>
               </div>
